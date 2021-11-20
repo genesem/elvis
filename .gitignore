@@ -6,5 +6,6 @@ dist-ssr
 _debug
 *.local
 *.cmd
+*.lock
 notes.txt
 
