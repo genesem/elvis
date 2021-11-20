@@ -8,10 +8,11 @@ so use it:
 
 1. `git clone https://github.com/genesem/elvis`
 
-2. `yarn` or `npm install`
+2. `cd elvis`  then: `yarn` or `npm install`
 
 3. `make build` to build it, with result in `./dist/`
 
+note: yes I'm using .makefile and *make* to build it ;)
 
 this stack is used as the base on some web sites:
 
@@ -22,9 +23,9 @@ etc..
 
 I hope the list will grow. :)
 
-P.S. this thing based heavily on the works of  @fpapado: https://github.com/fpapado/eleventy-with-vite
+P.S. this thing based heavily on the works of  [@fpapado](https://github.com/fpapado/eleventy-with-vite)
 
-with some mods from me, like:
+with some mods. from me, like:
 CORS configuration, Svelte and WindiCSS integrations.
 
 
