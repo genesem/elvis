@@ -13,7 +13,7 @@ so use it:
 3. `make build` to build it, with result in `./dist/`
 
 
-this stack is used some sites:
+this stack is used as the base on some web sites:
 
 * https://www.vpsguy.com
 * https://www.vgtea.com
