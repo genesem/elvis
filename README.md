@@ -10,7 +10,26 @@ so use it:
 
 2. `yarn` or `npm install`
 
-3. `make build` to build it, with result in `./dist/`.
+3. `make build` to build it, with result in `./dist/`
+
+
+this stack is used some sites:
+
+* https://www.vpsguy.com
+* https://www.vgtea.com
+
+etc..
+
+I hope the list will grow. :)
+
+P.S. this thing based heavily on th works of  @fpapado: https://github.com/fpapado/eleventy-with-vite
+
+with some mods from me, like:
+CORS configuration, Svelte and WindiCSS integrations.
+
+
+
+
 
 
 
