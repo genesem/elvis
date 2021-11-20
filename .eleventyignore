@@ -1,0 +1,5 @@
+# Ignore the client scripts and CSS; Vite is serving or building them
+src/client/*.js
+src/client/*.css
+src/client/*.svelte
+

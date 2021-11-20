@@ -1,0 +1,10 @@
+node_modules
+.DS_Store
+.arch
+dist
+dist-ssr
+_debug
+*.local
+*.cmd
+notes.txt
+

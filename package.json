@@ -1,0 +1,36 @@
+{
+  "name": "ElViS",
+  "version": "1.0.0",
+  "description": "Base template for integrating a Vite build with Eleventy, Svelte and WindiCSS",
+  "author": "Gene Sem (hey@vpsguy.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/genesem/elvis"
+  },
+  "bugs": {
+    "url": "https://github.com/genesem/elvis"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@vitejs/plugin-legacy": "^1.3.2",
+    "concurrently": "^6.0.0",
+    "serve": "^11.3.2",
+    "svelte": "^3.44.2",
+    "vite": "^2.1.3",
+    "vite-plugin-windicss": "^1.5.1",
+    "windicss": "^3.2.1"
+  },
+  "scripts": {
+    "dev": "concurrently npm:dev:*",
+    "dev:eleventy": "eleventy --serve",
+    "dev:vite": "vite",
+    "build": "npm run build:vite && npm run build:eleventy",
+    "build:eleventy": "NODE_ENV=production eleventy",
+    "build:vite": "NODE_ENV=production vite build",
+    "prod": "SET NODE_ENV=production npm run build && serve _site"
+  }
+}
