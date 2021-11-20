@@ -22,7 +22,7 @@ etc..
 
 I hope the list will grow. :)
 
-P.S. this thing based heavily on th works of  @fpapado: https://github.com/fpapado/eleventy-with-vite
+P.S. this thing based heavily on the works of  @fpapado: https://github.com/fpapado/eleventy-with-vite
 
 with some mods from me, like:
 CORS configuration, Svelte and WindiCSS integrations.
