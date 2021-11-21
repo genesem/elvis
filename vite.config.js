@@ -1,11 +1,11 @@
 
-import { defineConfig } from "vite";
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import WindiCSS from "vite-plugin-windicss";
 
 const inputDir = process.env.INPUTDIR || "src";
 const outDir = process.env.OUTDIR || "dist";
-const outMaps = process.env.OUTMAPS || false;
+const outMaps = (process.env.OUTMAPS=='true') || false;  // otherwise false considered as string
+const assetsDir = 'assets'; // default is 'assets'
 
 console.log("inputDir", inputDir);
 console.log("outDir", outDir);
@@ -13,7 +13,7 @@ console.log("outMaps", outMaps);
 console.log("NODE_ENV", process.env.NODE_ENV);
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default {
   plugins: [
 				
 		WindiCSS({configPath: './windi.config.js'}),
@@ -37,6 +37,7 @@ export default defineConfig({
     // You could opt to build in an intermediate directory,
     // and have Eleventy copy the flies instead.
     outDir: outDir,
+    assetsDir:  assetsDir, // default is 'assets'
 
     // Sourcemaps not critical for this to work
     sourcemap: outMaps,
@@ -59,6 +60,10 @@ export default defineConfig({
 
   server: {
 
+    // host: '127.0.0.1',  // default '127.0.0.1'
+    port: 3000, // default 3000
+    strictPort: true,  // don't try to use another avail. port
+
   	cors: {
 		"origin": "*",
 		"methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -70,5 +75,4 @@ export default defineConfig({
   	// https://vitejs.dev/config/#server-middlewaremode
   }
 
-})
-
+}
